@@ -4,3 +4,6 @@
 .vscode/launch.json
 .vscode/ipch
 src/config.h
+configuration-tools/Result.log
+configuration-tools/experimental settings
+configuration-tools/config.h
