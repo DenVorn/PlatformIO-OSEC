@@ -61,7 +61,7 @@ uint16_t cutoffSetpoint(uint32_t ui32_dutycycle) {
 BitStatus checkMaxErpsOverride(){
 	if (ui32_erps_filtered > ui16_erps_max) {
 		ui32_dutycycle = PI_control(ui32_erps_filtered, ui16_erps_max,uint_PWM_Enable); //limit the erps to maximum value to have minimum 30 points of sine table for proper commutation
-		controll_state_temp +=1024;
+		controll_state_temp += 1024;
 		return 1;
 	}
 	return 0;
